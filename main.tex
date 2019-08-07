@@ -94,20 +94,19 @@
     \resumeSubHeadingListStart
         \resumeSubheading
         {Best Buy [PowerObjects Client]}{Minneapolis, MN}
-        {Software Developer}{June 2018 -- Present}
+        {Build Engineer / Software Developer}{June 2018 -- Present}
         \resumeItemListStart
-            \resumeItem {Automation}{Carried out technical transition of project-wide build and deployment practices from fully manual to fully automated. Designed and implemented Azure DevOps pipelines to move, transform, and deploy data and builds across environments. Moved automation pipelines to configuration as code using YAML, as well as from GUI-centric to CLI-centric pipeline maintenance and development workflows. Reduced average automate build-to-deployment time by 50\% by improving efficiency of delta creation.}
-            \resumeItem {Development}{Wrote C\# and PowerShell tools to automate build and deployment of Dynamics 365 environmental data and development work via Azure DevOps. Wrote tool to synchronize data across Dynamics 365 instances, as well as backup production data for rollback purposes. Developed applications for Dynamics 365 platform in C\# and JavaScript.}
-            \resumeItem {Version Control}{Migrated automation processes and assets from Team Foundation Version Control to Git.}
-            \resumeItem {Documentation and Process} {Created incident response guidelines to standardize action around build and deployment failures. Owned, grew, maintained, and prioritized backlog of features, bugs, and tasks related to development of pipeline automation tools and processes. Maintained and created documentation to communicate knowledge and practices related to automated build and deployments}
-            \resumeItem {Code Quality} {Created Unit Testing educational program serving ~50 developers. Initiated code review practices. Created suite of unit tests for existing code base netting ~70\% code coverage.}
+            \resumeItem {CI/CD \& Automation}{Carried out technical transition of project serving 30k users from fully manual to fully automated in lower environments. Scaled pipeline automation from 0 to 4 development teams across a 24-hour development cycle, generating builds for ~65 production releases a year and carrying out ~20 automated deploys per week into lower environments. Decreased build payload complexity and size by multiple factors, as well as reduced average automation build-to-deployment time by 50\% by improving accuracy and efficiency of delta creation process. Designed and implemented pipeline architecture to encourage easy isolation, testing, and low-risk propagation of changes in Azure DevOps, lowering defect rate associated with pipeline modification.}
+            \resumeItem {Software Development}{Wrote custom tooling in C\# and PowerShell to automate build and deployment of Dynamics 365 environmental data and development work via Azure DevOps. Wrote custom tooling to generate environmental deltas to minimize deployment payload size and complexity. Wrote tool to synchronize data across Dynamics 365 instances and generate rollback packages for production instances. Developed customizations in C\# and JavaScript for proprietary 3rd party CRM platform serving 30k in-house installs.}
+            \resumeItem {Documentation and Process} {Created incident response guidelines to standardize action around build and deployment failures. Owned, grew, maintained, and prioritized backlog of features, bugs, and tasks related to development of pipeline automation tools and processes. Maintained and created documentation to communicate knowledge and practices related to automated build and deployments. Oversaw the build and deployment practices of all scrum teams on project.}
+            \resumeItem {Code Quality} {Created educational program and material detailing unit testing practices and techniques for ~50 developers across multiple Scrum teams. Initiated practice of regular code reviews. Created suite of unit tests for untested existing code base, achieving ~70\% code coverage.}
         \resumeItemListEnd
         
     \resumeSubheading
     {PowerObjects}{Minneapolis, MN}
-    {Software Developer}{Apr 2018 -- Present}
+    {Software Developer / Consultant}{Apr 2018 -- Present}
         \resumeItemListStart
-            \resumeItem {Internal Initiatives}{Co-founded and steered task force to communicate knowledge of DevOps and automation practices across teams. Created company-wide survey to assess internal practices related to automation, tools, and team health. Facilitated  ``Clean Code Book Club`` meetings, reading and discussing techniques to improve code quality (main reading: ``Clean Code`` by Robert C. Martin). Developed and and presented educational material to teams on unit testing practices specific to Microsoft’s Dynamics 365 platform and the FakeXrmEasy unit testing framework.}
+            \resumeItem {Internal Initiatives}{Co-founded and steered task force to communicate knowledge of DevOps, tooling, and automation practices across teams. Created company-wide survey to assess internal practices related to automation, tools, and team health. Facilitated  ``Clean Code Book Club`` meetings, reading and discussion of techniques to improve code quality (main reading: ``Clean Code`` by Robert C. Martin). Developed and and presented educational material to teams on unit testing practices specific to Microsoft`s Dynamics 365 platform and the FakeXrmEasy unit testing framework.}
         \resumeItemListEnd
   
     \resumeSubheading
@@ -123,13 +122,18 @@
     %-----------PROJECTS-----------------
   \section{Projects}
     \resumeSubHeadingListStart
-    \resumeSubItem{Microsoft.Xrm.DevOps.Solution | \href{https://github.com/ryanklee/DSA}{https://github.com/ryanklee/Microsoft.Xrm.DevOps.Solution}}
-    {Open source C\# library and PowerShell module to automate deployments across Dynamics 365 environments. Part of larger design collaboration of build and deploy automation tools for Dynamics 365.}
-
-    \resumeSubItem{OSS Repository of Data Structures and Algorithms | \href{https://github.com/ryanklee/DSA}{https://github.com/ryanklee/DSA}}
-    {Open Source Repository containing C\# implementations of various data structures, algorithms, toy program examples using the implementations, and corresponding unit tests built using TDD.}
-    \resumeSubHeadingListEnd
     
+    \resumeSubItem{OSS Repository of Data Structures and Algorithms | \href{https://github.com/ryanklee/DSA}{https://github.com/ryanklee/DSA}}
+    {Open Source Repository containing C\# implementations of various data structures, algorithms, toy program examples using the implementations.}
+    
+    \resumeSubItem{UDist | \href{https://github.com/ryanklee/UDist}{https://github.com/ryanklee/UDist}}{Jupyter notebook written in Python. Contains random generation utility, output, and plotting to communicate naive observations and hypotheses on uniform distributions.}
+
+\iffalse    
+    \resumeSubItem{Microsoft.Xrm.DevOps.Solution | \href{https://github.com/ryanklee/DSA}{https://github.com/ryanklee/Microsoft.Xrm.DevOps.Solution}}
+    {Open source C\# library and PowerShell module to automate deployments across Dynamics 365 environments. Part of larger design collaboration of build and deploy automation tooling for Dynamics 365.}
+\fi    
+    \resumeSubHeadingListEnd
+
     %-----------EDUCATION-----------------
   \section{Education}
     \resumeSubHeadingListStart
