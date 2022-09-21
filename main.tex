@@ -1,10 +1,4 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% Website: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
+ 
 \documentclass[letterpaper,11pt]{article}
 
   \usepackage{latexsym}
@@ -76,28 +70,22 @@
   
   %----------HEADING-----------------
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\href{https://github.com/ryanklee}{\Large Ryan Kleeberger}} & Email : \href{mailto:rylklee@gmail.com}{rylklee@gmail.com}\\
+    \textbf{\href{https://github.com/ryanklee}{\Large Ryan Kleeberger}} & Email : \href{mailto:ryan.kleeberger@gmail.com}{ryan.kleeberger@gmail.com}\\
     \href{https://github.com/ryanklee}{https://github.com/ryanklee} & Mobile : 443-635-8339 \\
   \end{tabular*}
   
-  %--------PROGRAMMING SKILLS------------
-  \section{Technical Skills}
-   \begin{tabularx}{\textwidth}{X X X}
-    $\bullet$ C\#          & $\bullet$ Terraform  & $\bullet$ Azure DevOps \\
-    $\bullet$ PowerShell   & $\bullet$ Docker Swarm   & $\bullet$ Microservices \\
-    $\bullet$ JavaScript & $\bullet$ Logging / Monitoring Tools & $\bullet$ Git \\
-    
-   \end{tabularx}
    
   %-----------EXPERIENCE-----------------
   \section{Experience}
     \resumeSubHeadingListStart
     
     \resumeSubheading
-    {Proto Labs}{Maple Plain, MN}
+    {ProtoLabs}{Maple Plain, MN}
     {Site Reliability Engineer / Software Developer}{Oct 2019 -- Present}
         \resumeItemListStart
-            \resumeItem {Site Reliability Engineering}{Worked with other Site Reliability Engineers to increase observability, reliability, and inter-team communications in a microservice architecture. Implemented PagerDuty to support 24/7 on-call schedule for ~200 responders. Used Terraform to hook application alerting into PagerDuty incidents and pages. Iterated tools and processes to decrease DB exceptions from ~8000 per week to sub-1000. Managed deploy-release pipelines for 6 separate microservices.}
+            \resumeItem {Incident Process / Management}{Designed and implemented 24/7 on-call schedule rotations for ~200 responders/~10s of teams. Integrated monitoring platform (NewRelic) into incident management platform (PagerDuty). Designed and created Terraform repository to house, configure and maintain telemetry, incident, and monitoring systems. Migrated monitoring and alerting systems (NewRelic to Datadog). Ported incident-management and alert-related Terraform repository to Ansible to adhere to in-house platform standards. Designed, created, documented org-wide incident process roles and responsibilities.}
+            \resumeItem{Site Reliability Engineering}{Designed and implemented monitoring and alerting standards across microservices. Introduced concept of Service Level Objectives into organization, and drove successful adoption of SLOs throughout the org. Collaborated with application teams to advise and implement custom monitoring and alerting. Connected non-SWEs to Observability tools as a source of business intelligence and feedback-and-control. Designed and oversaw ground-floor Chaos Engineering activities. Managed logging, metric, and trace ingestion to control cost and maintain utility. Regularly analyzed and tuned alerting systems to reduce fatigue and increase signal.
+            \resumeItem{Organizational Initiatives}{Designed SLO-based SRE process as an alternative to org's existing SRE resource utilization. Used partial adoption and success of this process to gain approval from Executive leadership to revamp SRE roles and practices throughout the org. Integrated technology acquisition into existing Observability systems. Advocated for Observability-first-and-for-all across the company.}}
         \resumeItemListEnd
     \resumeSubheading
     {Best Buy [PowerObjects Consultant]}{Minneapolis, MN}
@@ -124,27 +112,16 @@
 
     \resumeSubHeadingListEnd
     
-    %-----------PROJECTS-----------------
-  \section{Projects}
-    \resumeSubHeadingListStart
-    
-    \resumeSubItem{OSS Repository of Data Structures and Algorithms | \href{https://github.com/ryanklee/DSA}{https://github.com/ryanklee/DSA}}
-    {Open Source Repository containing C\# implementations of various data structures, algorithms, toy program examples using the implementations.}
-    
-    \resumeSubItem{UDist | \href{https://github.com/ryanklee/UDist}{https://github.com/ryanklee/UDist}}{Jupyter notebook written in Python. Contains random generation utility, output, and plotting to communicate naive observations and hypotheses on uniform distributions.}
-
-\iffalse    
-    \resumeSubItem{Microsoft.Xrm.DevOps.Solution | \href{https://github.com/ryanklee/DSA}{https://github.com/ryanklee/Microsoft.Xrm.DevOps.Solution}}
-    {Open source C\# library and PowerShell module to automate deployments across Dynamics 365 environments. Part of larger design collaboration of build and deploy automation tooling for Dynamics 365.}
-\fi    
-    \resumeSubHeadingListEnd
 
     %-----------EDUCATION-----------------
   \section{Education}
     \resumeSubHeadingListStart
       \resumeSubheading
+        {University of Minnesota}{Minneapolis, MN}
+        {Master of Science in Software Engineering}{Sep 2020 -- 2022}
+      \resumeSubheading
         {Shimer College}{Chicago, IL}
-        {Bachelor of Arts in Humanities}{Sep 2002 -- 2008}
+        {Bachelor of Arts in Humanities}{2002 -- 2008}
     \resumeSubHeadingListEnd
   
   %-------------------------------------------
